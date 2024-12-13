@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		464896052D0CAEB100359F0F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464896042D0CAEB100359F0F /* SignUpVC.swift */; };
 		464896072D0CB4F600359F0F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464896062D0CB4F600359F0F /* LoginVC.swift */; };
+		464901C82D0CC36F00009CC4 /* OTPVrifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464901C72D0CC36F00009CC4 /* OTPVrifyVC.swift */; };
 		469231392D0A0F7900E100EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692312F2D0A0F7900E100EE /* AppDelegate.swift */; };
 		4692313A2D0A0F7900E100EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469231362D0A0F7900E100EE /* SceneDelegate.swift */; };
 		4692313C2D0A0F7900E100EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 469231302D0A0F7900E100EE /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		4635484A2D0A077600E2E31B /* Affinity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Affinity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		464896042D0CAEB100359F0F /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		464896062D0CB4F600359F0F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		464901C72D0CC36F00009CC4 /* OTPVrifyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVrifyVC.swift; sourceTree = "<group>"; };
 		4692312F2D0A0F7900E100EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469231302D0A0F7900E100EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		469231312D0A0F7900E100EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				464896042D0CAEB100359F0F /* SignUpVC.swift */,
 				464896062D0CB4F600359F0F /* LoginVC.swift */,
+				464901C72D0CC36F00009CC4 /* OTPVrifyVC.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				4692314A2D0A118600E100EE /* OnboardingVC.swift in Sources */,
 				464896052D0CAEB100359F0F /* SignUpVC.swift in Sources */,
 				4692313A2D0A0F7900E100EE /* SceneDelegate.swift in Sources */,
+				464901C82D0CC36F00009CC4 /* OTPVrifyVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

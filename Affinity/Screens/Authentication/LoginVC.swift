@@ -57,7 +57,14 @@ class LoginVC: UIViewController {
         setupUI()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        txtPhoneNumber.becomeFirstResponder()
+    }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        txtPhoneNumber.resignFirstResponder()
+    }
+
     
     // MARK: - @IBActions
     @IBAction func btnContinueAction(_ sender: UIButton) {
@@ -78,6 +85,8 @@ class LoginVC: UIViewController {
     }
     
     private func handleContinueButtonTap() {
+        txtPhoneNumber.resignFirstResponder()
+        
         guard let phoneNumber = txtPhoneNumber.text, !phoneNumber.isEmpty else {
             print("Please enter phone number")
             return
@@ -86,6 +95,12 @@ class LoginVC: UIViewController {
         // Handle phone number validation and continue action
         let formattedNumber = "\(counryPickerView.selectedCountry.phoneCode) \(phoneNumber)"
         print("Formatted phone number: \(formattedNumber)")
+        
+        
+        guard let otpVerifyVC = self.storyboard?.instantiateViewController(withIdentifier: OTPVrifyVC.className) as? OTPVrifyVC else {
+            return
+        }
+        SceneDelegate().sceneDelegate?.mainNav?.pushViewController(otpVerifyVC, animated: true)
     }
 
 }

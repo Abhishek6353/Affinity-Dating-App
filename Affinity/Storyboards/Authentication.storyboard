@@ -237,6 +237,9 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJc-Pq-1HA">
                                         <rect key="frame" x="170" y="0.0" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="jJc-Pq-1HA" secondAttribute="height" multiplier="1:1" id="8mC-Le-Qtm"/>
+                                        </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="IconApple"/>
                                         <userDefinedRuntimeAttributes>
@@ -252,9 +255,6 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="jJc-Pq-1HA" firstAttribute="width" secondItem="jJc-Pq-1HA" secondAttribute="height" multiplier="1:1" id="8mC-Le-Qtm"/>
-                                </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AMD-be-Mcx">
                                 <rect key="frame" x="0.0" y="703" width="393" height="76"/>
@@ -429,12 +429,142 @@
             </objects>
             <point key="canvasLocation" x="1733.5877862595419" y="-34.507042253521128"/>
         </scene>
+        <!--VrifyVC-->
+        <scene sceneID="jvC-Ae-BTK">
+            <objects>
+                <viewController storyboardIdentifier="OTPVrifyVC" id="lcp-nR-9bU" customClass="OTPVrifyVC" customModule="Affinity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hn4-3s-ZwS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKh-DI-G0Q">
+                                <rect key="frame" x="40" y="59" width="52" height="52"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ML5-Lm-BTn">
+                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="iconRight"/>
+                                        <connections>
+                                            <action selector="btnBackAction:" destination="lcp-nR-9bU" eventType="touchUpInside" id="Ulc-ae-6KS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ML5-Lm-BTn" secondAttribute="trailing" id="7kC-f4-xN7"/>
+                                    <constraint firstAttribute="bottom" secondItem="ML5-Lm-BTn" secondAttribute="bottom" id="loW-ml-PN1"/>
+                                    <constraint firstItem="ML5-Lm-BTn" firstAttribute="top" secondItem="UKh-DI-G0Q" secondAttribute="top" id="mZT-1D-ig4"/>
+                                    <constraint firstItem="ML5-Lm-BTn" firstAttribute="leading" secondItem="UKh-DI-G0Q" secondAttribute="leading" id="vnV-0G-H2r"/>
+                                    <constraint firstAttribute="width" secondItem="UKh-DI-G0Q" secondAttribute="height" multiplier="1:1" id="xRI-sU-UA0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="primaryBorder"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yFy-CF-xIv">
+                                <rect key="frame" x="111.00000000000001" y="143" width="171.33333333333337" height="82.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:42" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7g-cQ-HMa">
+                                        <rect key="frame" x="0.0" y="0.0" width="171.33333333333334" height="40.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJk-Qz-dYO">
+                                        <rect key="frame" x="0.0" y="48.666666666666657" width="171.33333333333334" height="33.666666666666657"/>
+                                        <string key="text">Type the verification code 
+we’ve sent you</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHq-La-eAa" customClass="DPOTPView" customModule="DPOTPView">
+                                <rect key="frame" x="40" y="273.33333333333331" width="313" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="selectedBorderWidthTextField">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidthTextField">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusTextField">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBorderColorTextField">
+                                        <color key="value" name="primaryRed"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColorTextField">
+                                        <color key="value" name="primaryBorder"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderTextColor">
+                                        <color key="value" name="primaryBorder"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="0000"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColorTextField">
+                                        <color key="value" name="primaryWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCursorHidden" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backGroundColorFilledTextField">
+                                        <color key="value" name="primaryRed"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="dismissOnLastEntry" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSv-RT-Zcf">
+                                <rect key="frame" x="153.66666666666666" y="407.33333333333331" width="86" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Send again">
+                                    <color key="titleColor" name="primaryRed"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MBc-gf-6iH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vSv-RT-Zcf" firstAttribute="top" secondItem="VHq-La-eAa" secondAttribute="bottom" constant="64" id="2iO-6b-t4O"/>
+                            <constraint firstItem="MBc-gf-6iH" firstAttribute="trailing" secondItem="VHq-La-eAa" secondAttribute="trailing" constant="40" id="3Am-Y0-0e2"/>
+                            <constraint firstItem="UKh-DI-G0Q" firstAttribute="height" secondItem="Hn4-3s-ZwS" secondAttribute="height" multiplier="0.0610329" id="58g-Dy-tBv"/>
+                            <constraint firstItem="UKh-DI-G0Q" firstAttribute="top" secondItem="MBc-gf-6iH" secondAttribute="top" id="5Qf-XJ-3Hh"/>
+                            <constraint firstItem="VHq-La-eAa" firstAttribute="leading" secondItem="MBc-gf-6iH" secondAttribute="leading" constant="40" id="6gd-zP-IUC"/>
+                            <constraint firstItem="UKh-DI-G0Q" firstAttribute="leading" secondItem="MBc-gf-6iH" secondAttribute="leading" constant="40" id="ITU-HG-N2Y"/>
+                            <constraint firstItem="VHq-La-eAa" firstAttribute="height" secondItem="Hn4-3s-ZwS" secondAttribute="height" multiplier="0.0821596" id="QLy-af-t6d"/>
+                            <constraint firstItem="VHq-La-eAa" firstAttribute="top" secondItem="yFy-CF-xIv" secondAttribute="bottom" constant="48" id="n1q-TP-Knt"/>
+                            <constraint firstItem="yFy-CF-xIv" firstAttribute="top" secondItem="UKh-DI-G0Q" secondAttribute="bottom" constant="32" id="vMb-xH-MCY"/>
+                            <constraint firstItem="yFy-CF-xIv" firstAttribute="centerX" secondItem="Hn4-3s-ZwS" secondAttribute="centerX" id="vfK-eJ-Tqc"/>
+                            <constraint firstItem="vSv-RT-Zcf" firstAttribute="centerX" secondItem="Hn4-3s-ZwS" secondAttribute="centerX" id="vyk-Ku-v0t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblTimer" destination="P7g-cQ-HMa" id="20q-mS-GBx"/>
+                        <outlet property="otpView" destination="VHq-La-eAa" id="zWP-xQ-MZL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DAy-xE-ye2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2472.5190839694656" y="-34.507042253521128"/>
+        </scene>
     </scenes>
     <resources>
         <image name="IconApple" width="25" height="28"/>
         <image name="IconFacebook" width="29" height="28"/>
         <image name="IconGoogle" width="28" height="28"/>
         <image name="appLogo1x" width="109" height="100"/>
+        <image name="iconRight" width="24" height="24"/>
         <namedColor name="inactive">
             <color red="0.67799997329711914" green="0.68599998950958252" blue="0.73299998044967651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

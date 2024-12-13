@@ -9,6 +9,7 @@ target 'Affinity' do
 
 pod 'IQKeyboardManagerSwift'
 pod 'CountryPickerView'
+pod 'DPOTPView'
 
 end
 
