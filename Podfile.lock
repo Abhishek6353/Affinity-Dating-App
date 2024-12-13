@@ -1,0 +1,20 @@
+PODS:
+  - CountryPickerView (3.3.0)
+  - IQKeyboardManagerSwift (7.1.1)
+
+DEPENDENCIES:
+  - CountryPickerView
+  - IQKeyboardManagerSwift
+
+SPEC REPOS:
+  trunk:
+    - CountryPickerView
+    - IQKeyboardManagerSwift
+
+SPEC CHECKSUMS:
+  CountryPickerView: 6322ada32a80b0cd721b0267282a5c24f406f263
+  IQKeyboardManagerSwift: d7f3d3a562c237a0e7335e657cd598c452f57f1b
+
+PODFILE CHECKSUM: b6820d83a51fdab8762b2c175afc7c8c7645bf33
+
+COCOAPODS: 1.16.2
