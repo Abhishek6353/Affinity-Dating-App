@@ -1,0 +1,67 @@
+# Xcode
+.DS_Store
+build/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# Swift Package Manager
+Packages/
+.build/
+.swiftpm/xcode/
+
+# CocoaPods
+Pods/
+Podfile.lock
+Podfile~
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Archives
+*.xcarchive
+
+# Unit test / Xcode profiling
+*.gcda
+*.gcno
+*.gcov
+*.profdata
+*.profraw
+
+# App thinning
+*.ipa
+*.dSYM.zip
+
+# Provisioning profiles
+*.mobileprovision
+
+# Logs
+*.log
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+
+# Assets
+*.generated.*
+
+# IDE specific
+.idea/
+.vscode/
+
+# Misc
+*.env
