@@ -87,13 +87,13 @@ class LoginVC: UIViewController {
     private func handleContinueButtonTap() {
         txtPhoneNumber.resignFirstResponder()
         
-        guard let phoneNumber = txtPhoneNumber.text, !phoneNumber.isEmpty else {
-            print("Please enter phone number")
-            return
-        }
+//        guard let phoneNumber = txtPhoneNumber.text, !phoneNumber.isEmpty else {
+//            print("Please enter phone number")
+//            return
+//        }
         
         // Handle phone number validation and continue action
-        let formattedNumber = "\(counryPickerView.selectedCountry.phoneCode) \(phoneNumber)"
+        let formattedNumber = "\(counryPickerView.selectedCountry.phoneCode) \(txtPhoneNumber.text ?? "")"
         print("Formatted phone number: \(formattedNumber)")
         
         

@@ -532,6 +532,24 @@ we’ve sent you</string>
                                     <color key="titleColor" name="primaryRed"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBv-ar-XOl">
+                                <rect key="frame" x="40" y="746" width="313" height="58"/>
+                                <color key="backgroundColor" name="primaryRed"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" name="primaryWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnContinueAction:" destination="Y7p-cs-jZZ" eventType="touchUpInside" id="MRV-ff-ZBD"/>
+                                    <action selector="btnSubmit:" destination="lcp-nR-9bU" eventType="touchUpInside" id="qqN-xq-Bvx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MBc-gf-6iH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -543,10 +561,14 @@ we’ve sent you</string>
                             <constraint firstItem="VHq-La-eAa" firstAttribute="leading" secondItem="MBc-gf-6iH" secondAttribute="leading" constant="40" id="6gd-zP-IUC"/>
                             <constraint firstItem="UKh-DI-G0Q" firstAttribute="leading" secondItem="MBc-gf-6iH" secondAttribute="leading" constant="40" id="ITU-HG-N2Y"/>
                             <constraint firstItem="VHq-La-eAa" firstAttribute="height" secondItem="Hn4-3s-ZwS" secondAttribute="height" multiplier="0.0821596" id="QLy-af-t6d"/>
+                            <constraint firstItem="pBv-ar-XOl" firstAttribute="leading" secondItem="MBc-gf-6iH" secondAttribute="leading" constant="40" id="Uc5-hs-5Za"/>
+                            <constraint firstItem="pBv-ar-XOl" firstAttribute="height" secondItem="Hn4-3s-ZwS" secondAttribute="height" multiplier="0.0680751" id="jUI-XU-5Nx"/>
+                            <constraint firstItem="MBc-gf-6iH" firstAttribute="trailing" secondItem="pBv-ar-XOl" secondAttribute="trailing" constant="40" id="kDs-mV-eEo"/>
                             <constraint firstItem="VHq-La-eAa" firstAttribute="top" secondItem="yFy-CF-xIv" secondAttribute="bottom" constant="48" id="n1q-TP-Knt"/>
                             <constraint firstItem="yFy-CF-xIv" firstAttribute="top" secondItem="UKh-DI-G0Q" secondAttribute="bottom" constant="32" id="vMb-xH-MCY"/>
                             <constraint firstItem="yFy-CF-xIv" firstAttribute="centerX" secondItem="Hn4-3s-ZwS" secondAttribute="centerX" id="vfK-eJ-Tqc"/>
                             <constraint firstItem="vSv-RT-Zcf" firstAttribute="centerX" secondItem="Hn4-3s-ZwS" secondAttribute="centerX" id="vyk-Ku-v0t"/>
+                            <constraint firstItem="MBc-gf-6iH" firstAttribute="bottom" secondItem="pBv-ar-XOl" secondAttribute="bottom" constant="14" id="x2J-SQ-ACL"/>
                         </constraints>
                     </view>
                     <connections>

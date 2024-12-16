@@ -10,6 +10,7 @@ target 'Affinity' do
 pod 'IQKeyboardManagerSwift'
 pod 'CountryPickerView'
 pod 'DPOTPView'
+pod 'MaterialComponents/TextControls+OutlinedTextFields'
 
 end
 

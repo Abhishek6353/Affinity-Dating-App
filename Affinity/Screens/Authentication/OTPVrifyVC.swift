@@ -39,4 +39,9 @@ class OTPVrifyVC: UIViewController {
         SceneDelegate().sceneDelegate?.mainNav?.popViewController(animated: true)
     }
     
+    @IBAction func btnSubmit(_ sender: UIButton) {
+        guard let vc = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: ProfileVC.className) as? ProfileVC else { return }
+        
+        SceneDelegate().sceneDelegate?.mainNav?.pushViewController(vc, animated: true)
+    }
 }
