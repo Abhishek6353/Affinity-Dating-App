@@ -21,7 +21,7 @@ class UIHelper: NSObject {
         textField.setFloatingLabelColor(.primaryBlack40, for: .normal)
         textField.setFloatingLabelColor(.primaryBlack40, for: .editing)
         textField.setFloatingLabelColor(.primaryBlack40, for: .disabled)
-        textField.setNormalLabelColor(.primaryBlack, for: .normal)
+        textField.setNormalLabelColor(.primaryBlack40, for: .normal)
         textField.CornerRadius = 15
     }
 }

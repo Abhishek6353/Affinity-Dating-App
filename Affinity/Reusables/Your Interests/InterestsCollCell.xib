@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InterestsCollCell" id="gTV-IL-0wX" customClass="InterestsCollCell" customModule="Affinity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="235" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="235" height="66"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42r-Qp-Jc5">
+                        <rect key="frame" x="0.0" y="0.0" width="235" height="66"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hjN-FK-c5M">
+                                <rect key="frame" x="13" y="13" width="209" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconPhotography" translatesAutoresizingMaskIntoConstraints="NO" id="WcZ-Vp-ax6">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="37r-yq-w27"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photography" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Of-IB-UoG">
+                                        <rect key="frame" x="28" y="0.0" width="181" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" name="primaryBlack"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hjN-FK-c5M" firstAttribute="leading" secondItem="42r-Qp-Jc5" secondAttribute="leading" constant="13" id="7KE-xB-qzU"/>
+                            <constraint firstAttribute="trailing" secondItem="hjN-FK-c5M" secondAttribute="trailing" constant="13" id="9rN-iE-rIf"/>
+                            <constraint firstAttribute="bottom" secondItem="hjN-FK-c5M" secondAttribute="bottom" constant="13" id="I3l-J6-uAW"/>
+                            <constraint firstItem="hjN-FK-c5M" firstAttribute="top" secondItem="42r-Qp-Jc5" secondAttribute="top" constant="13" id="kF7-Ct-fce"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="primaryBorder"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="42r-Qp-Jc5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AZR-Qj-TgD"/>
+                <constraint firstAttribute="bottom" secondItem="42r-Qp-Jc5" secondAttribute="bottom" id="BYi-ic-Dge"/>
+                <constraint firstItem="42r-Qp-Jc5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hHl-b1-TEo"/>
+                <constraint firstAttribute="trailing" secondItem="42r-Qp-Jc5" secondAttribute="trailing" id="i4D-x3-Fru"/>
+            </constraints>
+            <size key="customSize" width="235" height="66"/>
+            <point key="canvasLocation" x="327.48091603053433" y="6.3380281690140849"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconPhotography" width="19" height="19"/>
+        <namedColor name="primaryBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryBorder">
+            <color red="0.9100000262260437" green="0.90200001001358032" blue="0.9179999828338623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

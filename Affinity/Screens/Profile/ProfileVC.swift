@@ -42,7 +42,8 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func btnContinueAction(_ sender: UIButton) {
-        
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: SelectGenderVC.className) as? SelectGenderVC else { return }
+        SceneDelegate().sceneDelegate?.mainNav?.pushViewController(vc, animated: true)
     }
     
     
